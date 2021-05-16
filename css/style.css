@@ -1,0 +1,188 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  background: var(--firstcolor); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondcolor); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+  
+:root
+{
+	--firstcolor : black;
+	--secondcolor: white;
+}
+
+.light
+{
+	--firstcolor : white;
+	--secondcolor: black;
+}
+
+body
+{
+	background-color: var(--firstcolor) !important ;
+}
+
+.active
+{
+	color:red;
+}
+
+.spacer
+{
+	height: 8px;
+}
+.nav
+{
+	background-color: var(--firstcolor);
+	width: 100%;
+	height: 60px;
+}
+.ltitle
+{
+	font-size: 25px;
+	width: 100px;
+    color:	var(--secondcolor);
+    margin-left: 10px;
+}
+.redtitle
+{
+	font-weight: normal;
+	color: red;
+}
+
+ul
+{	
+	list-style: none;
+	display: inline-flex;
+	float: right;
+	font-size: 25.5px;
+	padding-top: 8px;
+	margin-right: 1px;
+}
+
+.mode
+{
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	border-radius: 50px;
+	background-color: white;
+	opacity: 50%;
+}
+.Home
+{
+	margin-left: -300px;
+}
+
+ul li a
+{
+	text-decoration: none;
+	color : var(--secondcolor);
+	margin-left: 8px;
+}
+
+ul li a:hover
+{
+	color: red;
+
+}
+
+
+.bgcard
+{
+	margin-top: 2%;
+	width: 80%;
+	height: 600px;
+	float: right;
+	border-radius:50px 0px 0px 50px ;
+	opacity: 50%;
+	transition-duration: 300ms; 
+}
+
+.bgcard:hover
+{
+	width: 80.5%;
+	opacity: 80%;
+}
+.welcometext
+{	
+	width: 10%;
+ 	position: absolute;
+ 	top: 20%;
+}
+.hi
+{
+	font-size: 120px;
+	color: var(--secondcolor);
+}
+.name
+{	
+	margin-left: 10px;
+ 	position: absolute;
+ 	top: 42%;
+ 	width: 90%;
+
+}
+.name:hover
+{	
+  font-style: italic;
+  -webkit-text-fill-color: var(--firstcolor);/* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--secondcolor);
+
+}
+.pname
+{
+	font-size: 60px;
+	color: var(--secondcolor);
+}
+.college
+{	
+	margin-left: 10px;
+	width: 90%;
+ 	position: absolute;
+ 	top: 55%;
+}
+.pcollege
+{
+	font-size: 40px;
+	color: var(--secondcolor);
+}
+.pcname
+{
+	font-size: 40px;
+	color: var(--secondcolor);
+}
+.redtext
+{
+	font-weight: normal;
+	color: red;
+}
+
+.work_card1
+{
+	align-self: center;
+	background-color: white;
+	border : solid red;
+}
+
+.coldm
+{
+	border : solid red;
+}
