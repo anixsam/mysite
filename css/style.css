@@ -2,7 +2,7 @@
 {
 	margin: 0px;
 	padding: 0px;
-
+	font-family: sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -29,15 +29,23 @@
 	--firstcolor : white;
 	--secondcolor: black;
 }
-
 body
 {
 	background-color: var(--firstcolor) !important ;
 }
 
+
 .active
 {
 	color:red;
+}
+
+.dropbtn
+{
+	background-color: var(--firstcolor);
+	display:inline-flex;
+	border : none;
+	text-decoration: none;
 }
 
 .spacer
@@ -85,6 +93,23 @@ ul
 	background-color: white;
 	opacity: 50%;
 }
+.scroll
+{
+	position: fixed;
+	right: 20px;
+	bottom: 90px;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	border-radius: 50px;
+	background-color: black;
+	opacity: 80%;
+}
+
+.scroll:hover
+{
+	opacity: 70%;
+}
 .Home
 {
 	margin-left: -300px;
@@ -120,6 +145,36 @@ ul li a:hover
 	width: 80.5%;
 	opacity: 80%;
 }
+
+.bgcard1
+{
+	margin-top: 3%;
+	width: 80%;
+	height: 600px;
+	float: left;
+	border-radius:0px 50px 50px 0px ;
+	opacity: 50%;
+	transition-duration: 300ms; 
+}
+
+.bgcard1:hover
+{
+	width: 80.5%;
+	opacity: 80%;
+}
+
+.eduqual
+{
+	width: 10%;
+	color: var(--secondcolor);
+ 	position: absolute;
+ 	top: 900px;
+}
+.edtext
+{
+	font-size: 75px;
+	float: right;
+}
 .welcometext
 {	
 	width: 10%;
@@ -128,21 +183,32 @@ ul li a:hover
 }
 .hi
 {
+	margin-left: 10px; 
 	font-size: 120px;
 	color: var(--secondcolor);
+	animation-name: typrewriter;
+	animation-duration: 1000ms;
 }
+
+@keyframes typrewriter
+{
+	0% {margin-left: -200px ; opacity: 0% }
+	100% { margin-left: 10px; opacity: 100% }
+}
+
 .name
 {	
 	margin-left: 10px;
  	position: absolute;
  	top: 42%;
  	width: 90%;
-
+ 	animation-name: typrewriter;
+	animation-duration: 1000ms;
 }
 .name:hover
 {	
   font-style: italic;
-  -webkit-text-fill-color: var(--firstcolor);/* Will override color (regardless of order) */
+  -webkit-text-fill-color: var(--firstcolor);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--secondcolor);
 
@@ -151,6 +217,7 @@ ul li a:hover
 {
 	font-size: 60px;
 	color: var(--secondcolor);
+
 }
 .college
 {	
@@ -163,11 +230,15 @@ ul li a:hover
 {
 	font-size: 40px;
 	color: var(--secondcolor);
+	animation-name: typrewriter;
+	animation-duration: 1000ms;
 }
 .pcname
 {
 	font-size: 40px;
 	color: var(--secondcolor);
+	animation-name: typrewriter;
+	animation-duration: 1000ms;
 }
 .redtext
 {
@@ -175,14 +246,235 @@ ul li a:hover
 	color: red;
 }
 
-.work_card1
-{
-	align-self: center;
-	background-color: white;
-	border : solid red;
+
+.footer
+{	
+	position: absolute;
+	background-color: var(--firstcolor); 
+	width: 100%;
+	height: 200px;
+	border-top: solid var(--secondcolor) 1px;
 }
 
-.coldm
+.demoindex
 {
-	border : solid red;
+	height: 3000px;
 }
+
+.demo
+{
+	height: 50px;
+}
+.cardbg
+{
+	margin-top: 10px;
+	width: 200px;
+	height: 570px;
+	background-color: var(--firstcolor);
+	opacity: 70%;
+	box-shadow: black 0px 5px 5px;
+}
+.bdy
+{
+	background-image: url("/images/bg.jpg");
+	background-repeat: no-repeat;
+}
+
+.workcard
+{
+	position: relative;
+	margin-left: 70px;
+	width: 200px;
+	height: 200px;
+}
+
+.workcardimg
+{
+	width: 300px;
+	height: 200px;
+	border: solid 8px var(--secondcolor);
+	box-shadow: var(--secondcolor) 0px 2px 4px 1px;
+	animation-name: animate;
+	animation-duration: 1s;
+	transition-duration: 200ms;
+
+}
+
+.workcardimg:hover
+{
+	transform: scale(1.05);
+}
+
+.rw
+{
+	height: 50px;
+}
+
+.rw1
+{
+	height: 50px;
+}
+
+.cardtextediting
+{
+	position: absolute;
+	color: white;
+	top: 150px;
+	right: 56px;
+	font-size: 25px;
+	animation-name: animate;
+	animation-duration: 1s;
+}
+
+.cardtextprojects
+{
+	position: absolute;
+	color: black;
+	top: 150px;
+	right: 85px;
+	font-size: 25px;
+	animation-name: animate;
+	animation-duration: 1s;
+}
+
+.cardtextutube
+{
+	position: absolute;
+	color: white;
+	top: 150px;
+	right: 80px;
+	font-size: 25px;
+	animation-name: animate;
+	animation-duration: 1s;
+}
+
+.cardtextphoto
+{
+	position: absolute;
+	color: white;
+	top: 150px;
+	right: 50px;
+	font-size: 25px;
+	animation-name: animate;
+	animation-duration: 1s;
+
+}
+
+.coverim
+{
+	height: 300px;
+}
+
+.proim
+{
+	width: 200px;
+	height: 200px;
+	margin-top: -7%;
+	border-radius: 100px;
+}
+
+.brief
+{
+	font-size: 30px;
+	color: var(--secondcolor)
+}
+
+.stryhd
+{
+	margin-left: 30px;
+	font-size: 30px;
+	color: var(--secondcolor)
+}
+
+.cont
+{
+	height:  5px;
+	width: 42%;
+	margin-left: 30px;
+	background-color: var(--secondcolor)
+}
+
+.pers
+{
+	color: var(--secondcolor);
+	display:inline;
+	float: left;
+	font-size: 30px;
+
+}
+
+.story
+{
+	font-size: 70px;
+	color: var(--secondcolor);
+}
+
+.para
+{
+	font-size: 30px;
+	font-style: italic;
+	color: var(--secondcolor);
+}
+.phone
+{
+
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+.ph
+{
+	text-decoration: none; 
+	color: var(--secondcolor)
+}
+.contact
+{
+	padding-top: 20px;
+	color: var(--secondcolor);
+	font-size: 20px;
+}
+
+.help
+{
+	padding-top: 20px;
+	color: var(--secondcolor);
+	font-size: 25px;
+}
+
+.socialfoot
+{
+	padding-top: 20px;
+	color: var(--secondcolor);
+	font-size: 25px;
+}
+.ph:hover
+{
+	color: red;
+}
+
+
+.fb
+{
+	margin-top: 20px;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	margin-right: 50px;
+	background-color: white;
+}
+
+.git
+{
+	margin-top: 20px;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+	background-color: white;
+}
+
+@keyframes animate 
+{
+	from {transform: scale(0,0);}
+	to {transform: scale(1,1);}}
+}
+
