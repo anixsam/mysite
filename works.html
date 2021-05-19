@@ -3,9 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title class="tit">My Works</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	<link rel="icon" type="image/gif" href="icon2.png">
 </head>
 
 <body class="bdy">
@@ -19,7 +22,7 @@
 					<li class="Home"><a href="index.html">Home</a></li>
 					<li class="works"><a  class="active"  href="works.html">Works</a></li>
 					<li class="social"><a href="#footer">Social</a></li>
-					<li class="skills"><a href="skills.html">Skills</a></li>
+					<li class="skills"><a href="index.html#skill">Skills</a></li>
 					<li class="about"><a  href="about.html">About</a></li>
 				</ul>
 			</div>
@@ -27,28 +30,157 @@
 	</div>
 	<!-- Navigation Bar -->
 
-	<center>
-	<div class = "col-lg-10 col-11 col-md-8 col-sm-7 col-xl-10 cardbg">
-		<div class="rw"></div>
-		<div class="row row-sm-5 row-md-5 row-5 ">
-			<div class="col-lg-3 col-5 col-sm-6 col-md-6 workcard"><a href=""><img src="images/editing.jpeg" class="workcardimg one">
-			</a><p class="cardtextediting">Video Editing</p></div>
-			<div class="col-lg-3 col-5 col-sm-6 col-md-6 workcard"><a href=""><img src="images/project.jpg" class="workcardimg two">
-			</a><p class="cardtextprojects">Projects</p></div>
-			<div class="col-lg-3 col-5 col-sm-6 col-md-6 workcard"><a href=""><img src="images/youtue.jpg" class="workcardimg three">
-			</a><p class="cardtextutube">Youtube</p></div>
+
+	<!-- Overlay -->
+	<!-- Projects -->
+	<div class="col-12 overlay" id="overlayproj">
+		<div class="col-12" ><img src="images/back.png" class="close" id="cls"></div>
+		<center><h1 class="col-12 ovrlyheading"><b>PROJECTS</b></h1></center>
+		<div class="col-12 pr1"><p class="col-6 col-l2 col-md-12 col-sm-12 secondheading">1.Bike Anti Theft System (B-A-T)</p>
+			<div class=" col-12 prdesc">
+				<p class="col-11 projectdesc">B-A-T System is a device designed with the collaboration of my team, members of the team including, Alby Kavanal, Alan M Eldho, Afnitha Sahier. B-A-T SYSTEM  is an anti-theft and security device for the bike when it is parked.Our goal with this project is to provide maximum protection for the bike when it is parked and also if it is snatched.We can remotely kill the bike’s engine if the bike is stolen. 
+ 				</p>
+ 				<div class="col-11"><center><img src="images/bat.png" class="projectimage"></center></div>
+				<p class="col-11 projectdesc">This Device connects to the main wiring harness of the bike.The system have a separate harness so that connection makes easy and no cutting of wires required.This device is connected to the user by the help of an android application
+ 				</p>
+				<div class="col-12 col-lg-12"><center><img src="images/bat2.png" class="projectimage2"></center></div>
+				<center><p class="instl">Installation of the device</p></center>
+				<div class="spacer2"></div>
+ 				<p class="col-11 projectdesc">This Device is designed to connect and operate seamlessly to our bike.The operation of the device is simple as the UI of the app is simple.User can interact with the bike using a smartphone which contains the feature of locking and unlocking the bike, also there is a feature where we can detect whether anybody turn the ignition of the bike also the owner can remotely turn off the bike in case of necessary. It comes with an additional feature of Find My Bike where owner can find the bike from the parking lot. We can also detect the gps location of tht bike realtime on the app. There is also option to review the account details of the owner.
+ 				</p>	
+ 				<center><iframe width="1000" height="600" src="https://www.youtube.com/embed/-gbf724571M"></iframe></center>
+
+ 				<center><p class="instl">Device Demonstration</p></center>
+ 				<div class="spacer2"></div>
+ 				<p class="col-11 projectdesc">This project was done as our BTech 3<sup>rd</sup> year design project.
+ 				</p>	
+			</div>	
 		</div>
-		<div class="rw1"></div>
-		<div class="row">
-			<div class="col-lg-3 col-5 col-sm-6 col-md-6  workcard"><a href=""><!-- <img src="" class="workcardimg five"> --></a></div>
-			<div class="col-lg-3 col-5 col-sm-6 col-md-6  workcard"><a href=""><img src="images/photography.jpg" class="workcardimg four">
-			</a><p class="cardtextphoto">Photography</p></div>
+
+		<div class="spacer2"></div>
+		<div class="col-12 pr1"><p class="col-6 col-l2 col-md-12 col-sm-12 secondheading">2.Overhaul-Online Spare Parts Market(UPCOMING)</p>
+			<div class=" col-12 prdesc">
+				<p class="col-11 projectdesc"> 
+					This is an upcoming project of our team that is an online spareparts market.
+ 				</p>
+ 				<div class="col-11"><center><img src="images/ohlogo.png" class="projectimage"></center></div>
+ 			    <div class="spacer2"></div>
+				<p class="col-11 projectdesc">In our website and mobile application people can buy spare parts , they can buy the products at low cost than the official service centers of the bike brands.
+ 				</p>	
+			</div>		
+		</div>
+	</div>
+	<!-- Projects -->
+
+	<!-- Video -->	
+	<div class="col-12 overlay" id="overlayvid">
+		<div class="col-12" ><img src="images/back.png" class="close" id="cls1"></div>
+		<center><h1 class="ovrlyheading">SOME OF MY EDITING WORKS</h1></center>
+		<div class="spacer2"></div>
+		<center>
+			<video class ="col-8 col-lg-8" src=videos/vid1.mp4 width="1000" height="600"  allowfullscreen controls=""  id="video"></video>
+			<div class="col-12 spacer2"></div>
+			<video class ="col-8 col-lg-8" src=videos/vid2.mp4 width="1000" height="600"  allowfullscreen controls=""  id="video2"></video>
+			<div class="col-12 spacer2"></div>
+			<video class ="col-8 col-lg-8" src=videos/vid3.mp4 width="1000" height="600"  allowfullscreen controls=""  id="video3"></video>
+		</center>
+	
+	</div>
+	<!-- Video -->
+
+
+	<!-- Gallery -->
+	<center>
+		<div class="col-12 overlay2" id="gallery">
+			<div class="col-12" ><img src="images/back.png" class="close" id="cls3"></div>
+			<div class="col-12 galldiv"><img src="" id="gall"></div>
+			<div class="spacer3"></div>
+		</div>
+	</center>
+	<!-- Gallery -->
+
+
+	<!-- Photography -->
+	<div class="col-12 overlay" id="overlayphoto">
+		<div class="col-12" ><img src="images/back.png" class="close" id="cls2">
+		<center><h1 class="ovrlyheading">SOME OF STILLS I'VE TAKEN</h1></center>
+		<div class="spacer2"></div>
+		<div class="gallery row">
+			<div class="col-10 col-lg-3 still">
+				<img src="stills/still1.jpg" class="gallimg" id="still1">
+			</div>
+			<div class="col-10 col-lg-3  still">
+				<img src="stills/still3.jpg" class="gallimg" id="still3">
+			</div>
+			<div class="col-10 col-lg-3 still">
+				<img src="stills/still6.jpg" class="gallimg" id="still6">
+			</div>
+
+			<div class="spacer2 col-12"></div>
+
+			<div class="col-10 col-lg-3 still">
+				<img src="stills/still4.jpg" class="gallimg" id="still4">
+			</div>
+			<div class="col-10 col-lg-3 still">
+				<img src="stills/still5.jpg" class="gallimg" id="still5">
+			</div>
+			<div class="col-10 col-lg-3 still">
+				<img src="stills/still7.jpg" class="gallimg" id="still7">
+			</div>
+
+			<div class="spacer2 col-12"></div>
+
+			<div class="col-10 col-lg-3 still">
+				<img src="stills/still2.jpg" class="gallimg" id="still2">
+			</div>
+			<div class="col-10 col-lg-3 still">
+				<img src="stills/still8.jpg" class="gallimg" id="still8">
+			</div>
+
+			<div class="spacer2 col-12"></div>
+		</div>
+	</div>
+	</div>
+	<!-- Photography -->
+
+	<center>
+	<div class = "col-lg-11 col-11 col-md-11 col-sm-11 col-xl-11 cardbg" id="cardbg">
+		<div class="rw"></div>
+
+		<div class="row row-sm-5 row-md-5 row-5 ">
+
+			<div class="col-lg-3 col-5 col-sm-6 col-md-6 workcard">
+				<img src="images/editing.jpeg" class="workcardimg" id="togglevid">
+				<div class="cardtext"><p class="cardtextediting">Video Editing</p></div>
+			</div>
+
+			<div class="col-lg-3 col-5 col-sm-6 col-md-6 workcard">
+				<img src="images/project.jpg" class="workcardimg" id="toggleproj">
+				<div class="cardtext"><p class="cardtextprojects">Projects</p></div>
+			</div>
+
+			<div class="col-lg-3 col-5 col-sm-6 col-md-6 workcard">
+				<a href="https://www.youtube.com/c/CREATIVECREWYT" target="_blank"><img src="images/youtue.jpg" class="workcardimg"></a>
+				<div class="cardtext"><p class="cardtextutube">Youtube</p></div>
+			</div>
+
+		</div>
+
+		<div class="row justify-items-center">
+			<div class="col-lg-3 col-5 col-sm-6 col-md-6  workcard">
+				<a href=""><!-- <img src="" class="workcardimg five"> --></a>
+			</div>
+			<div class="col-lg-3 col-5 col-sm-6 col-md-6  workcardphoto">
+					<img src="images/photography.jpg" class="workcardimg" id="togglephoto">
+					<div class="cardtext"><p class="cardtextphoto">Photography</p></div>
+			</div>
+
 			<div class="col-lg-3 col-5 col-sm-6 col-md-6  workcard"><a href=""><!-- <img src="" class="workcardimg six"> --></a></div>
 		</div>
 
 	</div>
+	</center>
 
-</center>
 
 	<!-- footer -->
 	<div class="container-fluid">
@@ -74,6 +206,8 @@
 			<a href="https://twitter.com/anix_sam" target="_blank"><img src="images/twit.png" class="fb"></a>
 			<a href="https://github.com/anixsam" target="_blank"><img src="images/git.png" class="git"></a></center>
 		</div>
+		<div class="spacer3"></div>
+		<div class="col-12 ccright"><p>Created By Anix Sam Saji</p><img src="images/copy.jpg" class="copy"><p>All Rights Reserved</p></div>
 	</div>
 	</div>
 	<!-- footer -->
@@ -84,34 +218,171 @@
 	<div class="scroll"><a href="#nav"><img class="scroll" id="" src="images/arrow.png" ></a></div>
 
 	<script>
+		document.addEventListener('contextmenu', event => event.preventDefault());
+		var video = document.getElementById("video");
+		var video2 = document.getElementById("video2");
+		var video3 = document.getElementById("video3");
+
+		var cls = document.getElementById("cls");
+		var cls1 = document.getElementById("cls1");
+		var cls2 = document.getElementById("cls2");
+
+		var photo = document.getElementById("togglephoto");
+		var vid = document.getElementById("togglevid");
+		var proj = document.getElementById("toggleproj");
+
+		var overlayphoto =  document.getElementById("overlayphoto");
+		var overlayvid =  document.getElementById("overlayvid");
+		var overlayproj =  document.getElementById("overlayproj");
+
+		var cardbg = document.getElementById("cardbg");
+
+		var img = document.getElementById("gall");
+
+		var gallery = document.getElementById("gallery");
+
+		var still1 = document.getElementById("still1");
+		var still2 = document.getElementById("still2");
+		var still3 = document.getElementById("still3");
+		var still4 = document.getElementById("still4");
+		var still5 = document.getElementById("still5");
+		var still6 = document.getElementById("still6");
+		var still7 = document.getElementById("still7");
+		var still8 = document.getElementById("still8");
+
+		var cardbg = document.getElementById("cardbg");
+
+		still1.onclick = function()
+		{
+			gallery.style.display = "block";
+			overlayphoto.style.display = "none";
+			gall.src = "stills/still1.jpg";
+		}
+		still2.onclick = function()
+		{
+			gallery.style.display = "block";
+			overlayphoto.style.display = "none";
+			gall.src = "stills/still2.jpg";
+		}
+		still3.onclick = function()
+		{
+			gallery.style.display = "block";
+			overlayphoto.style.display = "none";
+			gall.src = "stills/still3.jpg";
+		}
+		still4.onclick = function()
+		{
+			gallery.style.display = "block";
+			overlayphoto.style.display = "none";
+			gall.src = "stills/still4.jpg";
+		}
+		still5.onclick = function()
+		{
+			gallery.style.display = "block";
+			overlayphoto.style.display = "none";
+			gall.src = "stills/still5.jpg";
+		}
+		still6.onclick = function()
+		{
+			gallery.style.display = "block";
+			overlayphoto.style.display = "none";
+			gall.src = "stills/still6.jpg";
+		}
+		still7.onclick = function()
+		{
+			gallery.style.display = "block";
+			overlayphoto.style.display = "none";
+			gall.src = "stills/still7.jpg";
+		}
+		still8.onclick = function()
+		{
+			gallery.style.display = "block";
+			overlayphoto.style.display = "none";
+			gall.src = "stills/still8.jpg";
+		}
+
+
+
+
+
+		cls3.onclick = function()
+		{
+			gallery.style.display = "none";
+			overlayphoto.style.display = "block";
+		}
+		photo.onclick = function()
+		{
+			overlayphoto.style.display = "block";
+			cardbg.style.display = "none";
+		}
+		cls2.onclick = function()
+		{
+			overlayphoto.style.display = "none";
+			cardbg.style.display = "block";
+		}
+
+		vid.onclick = function()
+		{
+			overlayvid.style.display = "block";
+			cardbg.style.display = "none";
+		}
+		cls1.onclick = function()
+		{	
+
+			video.pause();
+			video2.pause();
+			video3.pause();
+			overlayvid.style.display = "none";
+			cardbg.style.display = "block";
+			
+		}
+
+
+		proj.onclick = function()
+		{
+			overlayproj.style.display = "block";
+			cardbg.style.display = "none";
+		}
+		cls.onclick = function()
+		{
+			overlayproj.style.display = "none";
+			cardbg.style.display = "block";
+		}
+
+
+
 		var icon = document.getElementById("icon");
+		var theme = localStorage.getItem("theme");
+		if(theme == "light")
+		{
+			document.body.classList.toggle("light");
+			icon.src ="images/dark.png";
+		}
+		else
+		{
+			icon.src ="images/light.png";
+		}
 		icon.onclick=function()
 		{
 			document.body.classList.toggle("light");
 			if(document.body.classList.contains("light"))
 			{
 				icon.src ="images/dark.png";
+				localStorage.setItem("theme","light");
 			}
 			else
 			{
 				icon.src ="images/light.png";
-			}
-		}
-
-		icon.onload = fn()
-		{
-			if(document.body.classList.contains("light"))
-			{
-				icon.src ="images/dark.png";
-			}
-			else
-			{
-				icon.src ="images/light.png";
+				localStorage.setItem("theme","dark");
 			}
 		}
 
 
 	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+   	 AOS.init();
+  	</script>
 </body>
 
 </html>

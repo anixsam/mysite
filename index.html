@@ -3,12 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="icon" type="image/gif" href="icon2.png">
 </head>
 
 <body>
+
+	
 	<!-- Navigation Bar -->
 	<div class="row-lg-12 row-md-8 row-sm-4 nav" id="nav">
 		<div class="col-lg-2 col-2">
@@ -17,12 +21,14 @@
 				<ul>
 					<li class="Home"><a class="active" href="index.html">Home</a></li>
 					<li class="works"><a href="works.html">Works</a></li>
-					<li class="social"><a href="#social">Social</a></li>
-					<li class="skills"><a href="skills.html">Skills</a></li>
+					<li class="social"><a href="#footer">Social</a></li>
+					<li class="skills"><a href="#skill">Skills</a></li>
 					<li class="about"><a href="about.html">About</a></li>
 				</ul>
 			</div>
 		</div>
+
+
 	<!-- Navigation Bar -->
 
 	<img src="images/img2.jpg" class="bgcard">
@@ -42,26 +48,64 @@
 		
 	</div>
 
-	<img src="images/img2.jpg" class="bgcard1">
 
-	<div class="col-1 col-lg-12 text" >
-		<div class="col-12 col-lg-12 eduqual"> 
+	<img src="images/img.jpg" data-aos="fade-right" class="bgcard1" data-aos-easing="linear">
+
+	<div class="col-12 col-lg-12 text2" data-aos="fade-left" data-aos-easing="linear">
+		<div class="col-8 col-lg-12 eduqual"> 
 			<p class="edtext">Educational Qualification</p>
 		</div>
-		<div class="col-11 col-lg-10 col-md-10 col-sm-10 name"> 
-			<p class="pname">Anix Sam Saji</p>
+		<div class="col-8 col-lg-8 col-md-8 col-sm-8 hgrad"> 
+			<p class="highestgrad">Highest Graduation : XII Kerala</p>
 		</div>
-		<div class="row-lg10 college"> 
-			<div class="col-10 col-lg-10 col-md-10 col-sm-10 pcollege"> Currently Studying <b class=redtext>BTech in Computer Science</b></div>
-         	<div class="col-11 col-lg-11 col-md-11 col-sm-11  pcname">in<b class=redtext> Ilahia College of Engineering and Technology</b></div>
+		<div class="col-lg-7 col-md-7  col-7 currgrad"> 
+         	<div class="col-7 col-lg-8 col-md-11 col-sm-7  currentgrad">Ongoing Graduation : Btech</div>
 		</div>
 		<div class="col-12 demo"></div>
 		
 	</div>
 
 
+	<img src="images/img3.jpg" data-aos="fade-left" class="bgcard" data-aos-easing="linear">
+
+	<div class="col-12 col-lg-12 text3" data-aos="fade-right" data-aos-easing="linear">
+		<div class="col-8 col-lg-12 interests"> 
+			<p class="inttext">Interests</p>
+		</div>
+		<div class="col-8 col-lg-8 col-md-8 col-sm-8 intdesc"> 
+			<p class="intdesctxt">Fields I'm interested in are Hardware Projects,Cloud Computing,Web Designing</p>
+		</div>
+		<div class="col-12 demo"></div>
 		
 	</div>
+
+
+	<img src="images/img4.jpg" class="bgcard1" data-aos="fade-right"  data-aos-easing="linear">
+
+	<div class="col-12 col-lg-12 text4" data-aos="fade-left" data-aos-easing="linear">
+		<div class="col-8 col-lg-12 skills" id="skill"> 
+			<p class="skillh">Skills</p>
+		</div>
+		<div class="col-11 col-lg-11 col-md-11 col-sm-11 skilldesc"> 
+			<p class="skilldesctxt">Skills which i have are on WebDesigning,programming on Arduino MicroControllers, experience in designing and implementing small circuits,developing small Iot based projects, attended google cloud ready program,experience in video editing and logo animation.</p>
+		</div>
+		<div class="col-12 demo"></div>
+		
+	</div>
+
+	<img src="images/img5.jpg" data-aos="fade-left" class="bgcard" data-aos-easing="linear">
+
+	<div class="col-12 col-lg-12 text5" data-aos="fade-right" data-aos-easing="linear">
+		<div class="col-8 col-lg-12 work"> 
+			<p class="workh">Works</p>
+		</div>
+		<div class="col-11 col-lg-11 col-md-11 col-sm-11 workdesc"> 
+			<p class="workdesctxt">Click below to see the works I've done.</p>
+			<div class="col-2"><center><button type="button" class="bt btn btn-danger" onclick="document.location='works.html'">See my works</button></center></div>
+		</div>
+	</div>
+	<div class="col-12 demo"></div>
+
 
 	
 	<!-- footer -->
@@ -88,6 +132,8 @@
 			<a href="https://twitter.com/anix_sam" target="_blank"><img src="images/twit.png" class="fb"></a>
 			<a href="https://github.com/anixsam" target="_blank"><img src="images/git.png" class="git"></a></center>
 		</div>
+		<div class="spacer3"></div>
+		<div class="col-12 ccright"><p>Created By Anix Sam Saji</p><img src="images/copy.jpg" class="copy"><p>All Rights Reserved</p></div>
 	</div>
 	</div>
 	<!-- footer -->
@@ -95,24 +141,44 @@
 	<img class="mode" id="icon" src="images/light.png">
 	<div class="scroll"><a href="#nav"><img class="scroll" id="" src="images/arrow.png" ></a></div>
 
-<script>
+	<script>
+
 
 		var icon = document.getElementById("icon");
+		var theme = localStorage.getItem("theme");
+		if(theme == "light")
+		{
+			document.body.classList.toggle("light");
+			icon.src ="images/dark.png";
+		}
+		else
+		{
+			icon.src ="images/light.png";
+		}
 		icon.onclick=function()
 		{
 			document.body.classList.toggle("light");
 			if(document.body.classList.contains("light"))
 			{
 				icon.src ="images/dark.png";
+				localStorage.setItem("theme","light");
 			}
 			else
 			{
 				icon.src ="images/light.png";
+				localStorage.setItem("theme","dark");
 			}
 		}
 
 
+
 	</script>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+   	 AOS.init();
+  	</script>
+
 </body>
 
 </html>

@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>About</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="icon" type="image/gif" href="icon2.png">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
 					<li class="Home"><a href="index.html">Home</a></li>
 					<li class="works"><a  href="works.html">Works</a></li>
 					<li class="social"><a href="#footer">Social</a></li>
-					<li class="skills"><a href="skills.html">Skills</a></li>
+					<li class="skills"><a href="index.html#skill">Skills</a></li>
 					<li class="about"><a  class="active" href="about.html">About</a></li>
 				</ul>
 			</div>
@@ -51,9 +53,9 @@
 				</ul>
 			</div>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>	
-			<center><p class="story">My Story</p>
-				<p class="col-11 para">" I'm Anix Sam Saji I'm from Manamthadam a place in Ernakulam District in Kerala,India. I'm 20 years old, born on 22<sup>nd</sup> November 2000.I'm living with my parents, my brother and my grandparents.
-					I completed my schooling from kindergarten to 10<sup>th</sup> at B.T.C. Public School Puthencruz. And I've completed my higher secondary studies at M.C.M Hss Pattimattom. I passed my 12<sup>th</sup>in 2018. Since 2018 I've been studying Btech in Computer Science and Engineering in Ilahia College of Engineering and Technology Muvattupzha.
+			<center><p class="story" data-aos="fade">My Story</p>
+				<p class="col-11 para" data-aos="fade">" I'm Anix Sam Saji I'm from Manamthadam a place in Ernakulam District in Kerala,India. I'm 20 years old, born on 22<sup>nd</sup> November 2000.I'm living with my parents, my brother and my grandparents.
+					I completed my schooling from kindergarten to 10<sup>th</sup> at B.T.C. Public School Puthencruz. And I've completed my higher secondary studies at M.C.M Hss Pattimattom. I passed out my 12<sup>th</sup>in 2018. Since 2018 I've been studying Btech in Computer Science and Engineering in Ilahia College of Engineering and Technology Muvattupzha.
 					<br>My Interests on academic activities are Web designing , Hardware projects, Cloud Computing.
 					<br>My Hobbies on non academic activites are Sound Designing , Music Production , Video Editing , Logo Animation , also I'm running a Youtube Channel which is about recreating movie sequences sing computer games. Also doing freelanced laptop and PC repairs." 
 				</p>
@@ -62,7 +64,7 @@
 
 	<!-- footer -->
 	<div class="container-fluid">
-		
+
 	<div class="demo"></div>
 	<div class="row footer" id="footer">
 		<div class="col-12 col-lg-4 col-sm-12 col-md-12 contact"><center>Contact</center>
@@ -84,6 +86,8 @@
 			<a href="https://twitter.com/anix_sam" target="_blank"><img src="images/twit.png" class="fb"></a>
 			<a href="https://github.com/anixsam" target="_blank"><img src="images/git.png" class="git"></a></center>
 		</div>
+		<div class="spacer3"></div>
+		<div class="col-12 ccright"><p>Created By Anix Sam Saji</p><img src="images/copy.jpg" class="copy"><p>All Rights Reserved</p></div>
 	</div>
 	</div>
 	<!-- footer -->
@@ -93,20 +97,35 @@
 	<div class="scroll"><a href="#nav"><img class="scroll" id="" src="images/arrow.png" ></a></div>
 
 
-
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+   	 AOS.init();
+  	</script>
 	<script>
 
 		var icon = document.getElementById("icon");
+		var theme = localStorage.getItem("theme");
+		if(theme == "light")
+		{
+			document.body.classList.toggle("light");
+			icon.src ="images/dark.png";
+		}
+		else
+		{
+			icon.src ="images/light.png";
+		}
 		icon.onclick=function()
 		{
 			document.body.classList.toggle("light");
 			if(document.body.classList.contains("light"))
 			{
 				icon.src ="images/dark.png";
+				localStorage.setItem("theme","light");
 			}
 			else
 			{
 				icon.src ="images/light.png";
+				localStorage.setItem("theme","dark");
 			}
 		}
 

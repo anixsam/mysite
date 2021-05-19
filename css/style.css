@@ -20,7 +20,7 @@
   
 :root
 {
-	--firstcolor : black;
+	--firstcolor : #181818;
 	--secondcolor: white;
 }
 
@@ -32,6 +32,7 @@
 body
 {
 	background-color: var(--firstcolor) !important ;
+	overflow-x: hidden;
 }
 
 
@@ -58,13 +59,14 @@ body
 	width: 100%;
 	height: 60px;
 }
+
 .ltitle
 {
 	font-size: 25px;
 	width: 100px;
     color:	var(--secondcolor);
     margin-left: 10px;
-}
+ }
 .redtitle
 {
 	font-weight: normal;
@@ -78,9 +80,14 @@ ul
 	float: right;
 	font-size: 25.5px;
 	padding-top: 8px;
-	margin-right: 1px;
+	margin-right: 0px;
 }
 
+.about
+{
+	margin-left:  60px;
+	margin-right: -55px;
+}
 .mode
 {
 	position: fixed;
@@ -96,14 +103,14 @@ ul
 .scroll
 {
 	position: fixed;
-	right: 20px;
-	bottom: 90px;
-	width: 60px;
-	height: 60px;
+	right: 25px;
+	bottom: 50%;
+	width: 50px;
+	height: 50px;
 	cursor: pointer;
 	border-radius: 50px;
-	background-color: black;
-	opacity: 80%;
+	background-color: white;
+	opacity: 30%;
 }
 
 .scroll:hover
@@ -119,7 +126,7 @@ ul li a
 {
 	text-decoration: none;
 	color : var(--secondcolor);
-	margin-left: 8px;
+	margin-left: 7px;
 }
 
 ul li a:hover
@@ -136,14 +143,14 @@ ul li a:hover
 	height: 600px;
 	float: right;
 	border-radius:50px 0px 0px 50px ;
-	opacity: 50%;
-	transition-duration: 300ms; 
+	opacity: 60% !important ;
+	transition-duration: 50ms; 
 }
 
 .bgcard:hover
 {
 	width: 80.5%;
-	opacity: 80%;
+	opacity: 80% !important;
 }
 
 .bgcard1
@@ -153,28 +160,16 @@ ul li a:hover
 	height: 600px;
 	float: left;
 	border-radius:0px 50px 50px 0px ;
-	opacity: 50%;
+	opacity: 60% !important;
 	transition-duration: 300ms; 
 }
 
 .bgcard1:hover
 {
-	width: 80.5%;
-	opacity: 80%;
+	width: 80.5% ;
+	opacity: 80% !important;
 }
 
-.eduqual
-{
-	width: 10%;
-	color: var(--secondcolor);
- 	position: absolute;
- 	top: 900px;
-}
-.edtext
-{
-	font-size: 75px;
-	float: right;
-}
 .welcometext
 {	
 	width: 10%;
@@ -247,6 +242,166 @@ ul li a:hover
 }
 
 
+.text2
+{
+	top:900px;
+	width: 800px;
+	position: absolute;
+	height: auto;
+}
+
+.eduqual
+{
+	width: 10%;
+	height: auto;
+	color: var(--secondcolor);
+ 	float: right;
+}
+.edtext
+{
+	float: right;
+	font-size: 75px;
+	margin-right: 10px;
+}
+
+.hgrad
+{	
+ 	height: auto;
+ 	float: right;
+}
+
+.highestgrad
+{
+	margin-right: 10px;
+	font-size: 55px;
+	color: var(--secondcolor);
+	float: right;
+}
+
+.currgrad
+{
+	float: right;
+	width: auto;
+}
+
+.currentgrad
+{
+	margin-right: 10px;
+	float: right;
+	font-size: 40px;
+	color: var(--secondcolor);
+}
+
+.text3
+{
+	top:1550px;
+	width: 800px;
+	position: absolute;
+	height: auto;
+}
+
+.interests
+{
+	width: 10%;
+	height: auto;
+	color: var(--secondcolor);
+ 	float: left;
+}
+.inttext
+{
+	margin-left: 10px;
+	float: left;
+	font-size: 75px;
+}
+
+.intdesc
+{	
+ 	height: auto;
+ 	float: left;
+}
+
+.intdesctxt
+{
+	margin-left: 10px;
+	font-size: 33px;
+	color: var(--secondcolor);
+	float: right;
+}
+
+.text4
+{
+	top:2200px;
+	width: 800px;
+	position: absolute;
+	height: auto;
+}
+
+.skills
+{
+	width: 10%;
+	height: auto;
+	color: var(--secondcolor);
+ 	float: right;
+}
+.skillh
+{
+	margin-right: 10px;
+	float: right;
+	font-size: 75px;
+}
+
+.skilldesc
+{	
+	margin-right:10px;
+ 	height: auto;
+ 	float: right;
+}
+
+.skilldesctxt
+{
+	font-size: 33px;
+	color: var(--secondcolor);
+	float: right;
+	text-align: right;	
+
+}
+
+.text5
+{
+	top:2750px;
+	width: 800px;
+	position: absolute;
+	height: auto;
+}
+
+.work
+{
+	width: 10%;
+	height: auto;
+	color: var(--secondcolor);
+ 	float: left;
+}
+.workh
+{
+	margin-left: 10px;
+	float: left;
+	font-size: 75px;
+}
+
+.workdesc
+{	
+ 	height: auto;
+ 	float: left;
+}
+
+.workdesctxt
+{
+	margin-left: 10px;
+	font-size: 33px;
+	color: var(--secondcolor);
+	float: left;
+}
+
 .footer
 {	
 	position: absolute;
@@ -258,7 +413,7 @@ ul li a:hover
 
 .demoindex
 {
-	height: 3000px;
+	height: 3300px;
 }
 
 .demo
@@ -268,28 +423,40 @@ ul li a:hover
 .cardbg
 {
 	margin-top: 10px;
-	width: 200px;
-	height: 570px;
+	width: auto;
+	height: auto;
 	background-color: var(--firstcolor);
 	opacity: 70%;
 	box-shadow: black 0px 5px 5px;
 }
 .bdy
 {
-	background-image: url("/images/bg.jpg");
+	background-image: url("../images/bg.jpg");
 	background-repeat: no-repeat;
 }
 
 .workcard
 {
+	margin-left: 80px;
+	margin-bottom: 10px;
 	position: relative;
-	margin-left: 70px;
-	width: 200px;
-	height: 200px;
-}
+	width: auto;
+	height: auto;
 
+}
+.workcardphoto
+{
+	position: relative;
+	margin-top: 20px;
+	margin-left: 80px;
+	margin-bottom: 30px;
+	width: auto;
+	height: auto;
+}
 .workcardimg
 {
+	margin-top: 10px;
+	margin-bottom: 20px;
 	width: 300px;
 	height: 200px;
 	border: solid 8px var(--secondcolor);
@@ -300,9 +467,20 @@ ul li a:hover
 
 }
 
+.cardtext
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: auto;
+	height: 50px;
+	bottom: 70px;
+}
+
 .workcardimg:hover
 {
 	transform: scale(1.05);
+	cursor: pointer;
 }
 
 .rw
@@ -319,8 +497,6 @@ ul li a:hover
 {
 	position: absolute;
 	color: white;
-	top: 150px;
-	right: 56px;
 	font-size: 25px;
 	animation-name: animate;
 	animation-duration: 1s;
@@ -330,9 +506,8 @@ ul li a:hover
 {
 	position: absolute;
 	color: black;
-	top: 150px;
-	right: 85px;
 	font-size: 25px;
+	text-align: center;
 	animation-name: animate;
 	animation-duration: 1s;
 }
@@ -341,8 +516,6 @@ ul li a:hover
 {
 	position: absolute;
 	color: white;
-	top: 150px;
-	right: 80px;
 	font-size: 25px;
 	animation-name: animate;
 	animation-duration: 1s;
@@ -352,8 +525,6 @@ ul li a:hover
 {
 	position: absolute;
 	color: white;
-	top: 150px;
-	right: 50px;
 	font-size: 25px;
 	animation-name: animate;
 	animation-duration: 1s;
@@ -468,6 +639,171 @@ ul li a:hover
 	margin-top: 20px;
 	width: 30px;
 	height: 30px;
+	border-radius: 100px;
+	background-color: white;
+}
+
+
+.close
+{
+	position: relative;
+	right: 10px;
+	top: 10px;
+	width: 30px;
+	height: 30px;
+	float: right;
+	cursor: pointer;
+	border-radius: 50px;
+	background-color: white;
+	opacity: 30%;
+}
+
+.overlay
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 50px;
+  color: white;
+  display: none;
+  background-color: var(--firstcolor);
+  opacity: 100%;
+}
+.ovrlyheading
+{
+	color: var(--secondcolor)
+}
+.secondheading
+{
+	font-size: 30px;
+	color: var(--secondcolor);
+}
+
+.pr1
+{
+	height: auto;
+	margin-left: 10px;
+	
+}
+
+.projectdesc
+{
+	font-size: 25px;
+	color: var(--secondcolor);
+}
+
+.prdesc
+{
+	margin-left: 20px;
+	background-image: url("images/logo.png");
+}
+
+.projectimage
+{
+	height: 500px;
+	width: 500px;
+}
+
+.instl
+{
+	font-size: 30px;
+}
+
+.spacer2
+{
+	height: 40px;
+	width: 100%;
+}
+.spacer3
+{
+	height: 20px;
+	width: 100%;
+}
+
+.vidcontainer
+{
+	border: solid var(--secondcolor) 5px;
+	width: 1010px;
+	height: 610px;
+}
+
+#video
+{
+	border: solid var(--secondcolor) 5px;
+}
+
+#video2
+{
+	border: solid var(--secondcolor) 5px;
+}
+
+#video3
+{
+	border: solid var(--secondcolor) 5px;
+}
+.gallery
+{
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.still
+{
+	margin-left: 30px;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	width: auto;
+}
+
+.gallimg
+{
+	border: solid 5px var(--secondcolor);
+	width: auto;
+	height: 300px;
+	transition-duration: 400ms;
+}
+
+.gallimg:hover
+{
+	transform: scale(1.1,1.1);
+	cursor: pointer;
+}
+
+.galldiv
+{
+	height: 700px;
+	display: flex;
+	justify-content: center;
+}
+
+.overlay2
+{
+  width: 500px;
+  height: auto;
+  font-size: 50px;
+  color: white;
+  display: none;
+   opacity: 100%;
+}
+
+.ccright
+{
+	margin-top:10px;
+	position: relative;
+	color: var(--secondcolor);
+	display: flex;
+	justify-content: center;
+}
+
+.copy
+{
+	display: flex;
+	margin-top:1px;
+	margin-left:3px;
+	margin-right:3px;
+	width: 20px;
+	height: 20px;
 	border-radius: 100px;
 	background-color: white;
 }
